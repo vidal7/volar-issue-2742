@@ -1,0 +1,9 @@
+{
+  "name": "volar-issue-2742",
+  "description": "Reproduction repo for volar issue 2742",
+  "author": "Vincent Dallaire <vincent.dallaire@dti.ulaval.ca>",
+  "devDependencies": {
+    "typescript": "^4.8.3",
+    "vue": "^2.7.14"
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "volar.format.initialIndent": {
+        "html": true,
+        "typescript": true
+    },
+    "vue.features.complete.tagNameCasing": "kebab",
+    "vue.features.complete.propNameCasing": "kebab",
+    "vue.features.complete.normalizeComponentImportName": true
+}

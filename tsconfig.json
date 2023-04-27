@@ -1,0 +1,9 @@
+{
+    "files": ["src/app.vue", "src/p-component-issue.vue"],
+    "compilerOptions": {
+        "strict": true
+    },
+    "vueCompilerOptions": {
+        "target": 2.7
+    }
+}
