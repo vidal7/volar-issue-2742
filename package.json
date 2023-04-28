@@ -3,7 +3,7 @@
   "description": "Reproduction repo for volar issue 2742",
   "author": "Vincent Dallaire <vincent.dallaire@dti.ulaval.ca>",
   "devDependencies": {
-    "typescript": "^4.8.3",
+    "typescript": "^5.0.4",
     "vue": "^2.7.14"
   }
 }
