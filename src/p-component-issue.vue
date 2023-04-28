@@ -3,9 +3,33 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+    import { defineComponent, PropType } from 'vue';
 
-export default defineComponent({
-    name: 'PComponentIssue'
-});
+    export default defineComponent({
+        name: 'PComponentIssue',
+
+        props: {
+            propOptional: {
+                type: undefined as unknown as PropType<string>
+            },
+            propOptionalWithDefault: {
+                default: true,
+                type: undefined as unknown as PropType<boolean>
+            },
+            propMandatory: {
+                required: true,
+                type: undefined as unknown as PropType<number>
+            }
+        },
+
+        emits: {
+            'event-without-payload': (): void => { },
+            'event-with-payload': (a: number, b: boolean) => { }
+        },
+
+        created(): void {
+            this.$emit('event-without-payload');
+            this.$emit('event-with-payload', 1, true);
+        },
+    });
 </script>

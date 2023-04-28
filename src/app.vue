@@ -1,7 +1,9 @@
 <template>
-    <p-component-issue :prop-obligatoire="2"
-                       :prop-optionnelle="'abc'"
-                       :prop-optionnelle-avec-defaut="true"></p-component-issue>
+    <p-component-issue :prop-mandatory="2"
+                       :prop-optional="'abc'"
+                       :prop-optional-with-default="true"
+                       @event-without-payload="handleEventWithoutPayload"
+                       @event-with-payload="handleEventWithPayload"></p-component-issue>
 </template>
 
 <script lang="ts">
@@ -9,6 +11,16 @@
     import PComponentIssue from './p-component-issue.vue';
 
     export default defineComponent({
-        components: { PComponentIssue }
+        components: { PComponentIssue },
+
+        methods: {
+            handleEventWithoutPayload(): void {
+                console.log('handleEventWithoutPayload');
+            },
+
+            handleEventWithPayload(): void {
+                console.log('handleEventWithPayload');
+            }
+        }
     });
 </script>
