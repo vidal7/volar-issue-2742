@@ -1,11 +1,22 @@
 {
+    "editor.formatOnSave": true,
+    "html.format.wrapLineLength": 0,
+    "html.format.wrapAttributes": "force-aligned",
     "typescript.tsdk": "./node_modules/typescript/lib",
     "typescript.enablePromptUseWorkspaceTsdk": true,
     "volar.format.initialIndent": {
         "html": true,
         "typescript": true
     },
-    "vue.features.complete.tagNameCasing": "kebab",
-    "vue.features.complete.propNameCasing": "kebab",
-    "vue.features.complete.normalizeComponentImportName": true
+    "vue.complete.casing.tags": "kebab",
+    "vue.complete.casing.props": "kebab",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    }
 }
